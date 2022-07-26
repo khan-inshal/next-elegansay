@@ -12,6 +12,8 @@ module.exports = {
       colors: {
         brand: {
           accent: "#1da1f2",
+          "button-hover": "#1877F2",
+          button: "#1560bd",
         },
       },
       container: {

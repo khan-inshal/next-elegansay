@@ -3,6 +3,7 @@ import { About } from "../components/HomePage/About";
 import { Hero } from "../components/HomePage/Hero";
 import FeaturedProperties from "../components/HomePage/FeaturedProperties/";
 import { createClient } from "contentful";
+import Trusted from "../components/HomePage/Trusted";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -31,6 +32,7 @@ export default function Home({ properties }) {
       <main>
         <section className="bg-black">
           <Hero />
+          <Trusted />
           <About />
         </section>
         <FeaturedProperties properties={properties} />
