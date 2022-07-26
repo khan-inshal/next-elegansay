@@ -15,7 +15,7 @@ export const About = () => {
           priority
         />
       </div>
-      <section className="pt-2 pb-12 flex flex-col justify-center lg:px-12 lg:py-0">
+      <section className="pt-8 pb-12 flex flex-col justify-center lg:px-12 lg:py-0">
         <h2 className="text-4xl font-bold text-center mb:text-5xl lg:text-left">
           We lead this industry
         </h2>
