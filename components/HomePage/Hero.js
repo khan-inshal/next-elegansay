@@ -11,7 +11,7 @@ export const Hero = () => {
         <h2 className="mb-2 uppercase font-bold tracking-widest text-zinc-400 mb:text-lg lg:text-2xl">
           Discover. Live. Relish.
         </h2>
-        <h1 className="uppercase font-bold text-center text-4xl mb:text-5xl lg:text-7xl">
+        <h1 className="uppercase font-bold text-4xl mb:text-5xl lg:text-7xl">
           Elegance is the <span className="text-brand-accent">new modern.</span>{" "}
         </h1>
 
