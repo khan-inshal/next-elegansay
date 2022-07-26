@@ -20,7 +20,7 @@ export const About = () => {
           We lead this industry
         </h2>
 
-        <p className="mt-8 mb-12 max-w-2xl lg:mb-16">
+        <p className="mt-8 mb-12 w-5/6 max-w-2xl lg:w-full lg:mb-16">
           Integer eros lectus, efficitur at rhoncus eu, faucibus vitae velit.
           Integer vehicula volutpat sagittis. Pellentesque tempus diam vitae
           hendrerit vestibulum. Curabitur ac nulla nec lacus laoreet fringilla
@@ -29,7 +29,7 @@ export const About = () => {
           finibus odio, vitae porta magna. Cras cursus nisi a odio sodales, id
           aliquam nibh eleifend. Aliquam imperdiet quis diam sed suscipit.
         </p>
-        <section className="flex justify-between text-center lg:text-left lg:gap-16">
+        <section className="flex justify-evenly text-center lg:text-left lg:gap-16">
           <div>
             <p className="text-4xl font-bold">300</p>
             <p className="text text-zinc-500 leading-snug w-min lg:w-fit">

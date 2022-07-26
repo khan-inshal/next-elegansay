@@ -8,14 +8,14 @@ export const Hero = () => {
   return (
     <>
       <section className="container container-width pt-24 min-h-screen flex flex-col justify-start items-center text-white">
-        <h2 className="mb-2 uppercase font-bold tracking-widest text-lg text-zinc-400 lg:text-2xl">
+        <h2 className="mb-2 uppercase font-bold tracking-widest text-zinc-400 mb:text-lg lg:text-2xl">
           Discover. Live. Relish.
         </h2>
         <h1 className="uppercase font-bold text-center text-4xl mb:text-5xl lg:text-left lg:text-7xl">
           Elegance is the <span className="text-brand-accent">new modern.</span>{" "}
         </h1>
 
-        <p className="mt-4 mb-2 text-zinc-500 text-center text-lg lg:my-4 lg:text-left">
+        <p className="mt-4 mb-2 text-zinc-500 text-center lg:text-lg lg:my-4 lg:text-left">
           Together we can craft and build things that last because{" "}
           <span className="text-zinc-400">
             we believe in great architecture.
