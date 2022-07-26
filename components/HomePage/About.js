@@ -29,7 +29,7 @@ export const About = () => {
           finibus odio, vitae porta magna. Cras cursus nisi a odio sodales, id
           aliquam nibh eleifend. Aliquam imperdiet quis diam sed suscipit.
         </p>
-        <section className="flex justify-evenly text-center lg:text-left lg:gap-16">
+        <section className="mx-3 flex justify-between text-center lg:mx-0 lg:text-left lg:gap-16">
           <div>
             <p className="text-4xl font-bold">300</p>
             <p className="text text-zinc-500 leading-snug w-min lg:w-fit">
