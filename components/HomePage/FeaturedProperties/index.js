@@ -1,6 +1,4 @@
-import { BsArrowRight } from "react-icons/bs";
 import FeaturedList from "./FeaturedList";
-import { GhostButton } from "../../Utils/GhostButton";
 import FeaturedLinkBtn from "./FeaturedLinkBtn";
 
 const FeaturedProperties = ({ properties }) => {

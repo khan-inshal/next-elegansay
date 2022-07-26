@@ -20,7 +20,7 @@ export const About = () => {
           We lead this industry
         </h2>
 
-        <p className="mt-8 mb-12 w-5/6 max-w-2xl lg:w-full lg:mb-16">
+        <p className="mt-8 mb-12 mx-3 max-w-2xl lg:mx-0 lg:mb-16">
           Integer eros lectus, efficitur at rhoncus eu, faucibus vitae velit.
           Integer vehicula volutpat sagittis. Pellentesque tempus diam vitae
           hendrerit vestibulum. Curabitur ac nulla nec lacus laoreet fringilla

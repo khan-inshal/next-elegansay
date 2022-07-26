@@ -15,7 +15,7 @@ export const Hero = () => {
           Elegance is the <span className="text-brand-accent">new modern.</span>{" "}
         </h1>
 
-        <p className="mt-4 mb-2 text-zinc-500 text-center lg:text-lg lg:my-4 lg:text-left">
+        <p className="mt-4 mb-2 mx-3 text-zinc-500 text-center lg:mx-0 lg:text-lg lg:my-4 lg:text-left">
           Together we can craft and build things that last because{" "}
           <span className="text-zinc-400">
             we believe in great architecture.
