@@ -20,6 +20,6 @@
 
 @layer components {
   .container-width {
-    @apply px-8 lg:w-11/12 lg:px-0;
+    @apply px-4 lg:w-11/12 lg:px-0;
   }
 }
