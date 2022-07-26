@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Heebo", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "PT Sans", sans-serif;
+    letter-spacing: -1px;
+  }
+}
+
+@layer components {
+  .container-width {
+    @apply px-8 lg:w-11/12 lg:px-0;
+  }
+}
