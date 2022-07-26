@@ -16,7 +16,7 @@ export const About = () => {
         />
       </div>
       <section className="pt-6 pb-12 flex flex-col justify-center lg:px-12 lg:py-0">
-        <h2 className="text-5xl font-bold text-center lg:text-left">
+        <h2 className="text-4xl font-bold text-center mb:text-5xl lg:text-left">
           We lead this industry
         </h2>
 
