@@ -4,6 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 999px;
+  padding: 1.5rem !important;
+  color: white !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.25rem !important;
+  font-weight: 900;
+}
+
 @layer base {
   html {
     font-family: "Heebo", sans-serif;

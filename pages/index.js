@@ -29,7 +29,7 @@ export default function Home({ properties }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="min-h-screen">
         <section className="bg-black">
           <Hero />
           <Trusted />

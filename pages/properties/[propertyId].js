@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { FaBath, FaMapMarkerAlt } from "react-icons/fa";
+import { Button } from "../../components/Utils/Button";
 
 const client = createClient({
   accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
@@ -50,26 +52,33 @@ const PropertyDetails = ({ property }) => {
     carouselPics,
   } = property.fields;
   const thumbSrc = `http:${thumbnail.fields.file.url}`;
-  console.log(carouselPics);
+
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+
+  const formattedPrice = formatter.format(price);
+
   return (
     <>
       <Head>
         <title>Comfystates</title>
       </Head>
 
-      <div className="container pt-20 px-4 grid grid-rows-2 lg:max-w-[85%]">
+      <div className="min-h-screen container pt-20 px-4 grid lg:max-w-[85%] xl:grid-rows-1 xl:grid-cols-2">
         <Swiper
           pagination={{
-            type: "fraction",
+            type: "bullets",
           }}
           loop={true}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="min-h-[50vh] w-full lg:min-h-[70vh]"
+          className="h-96 w-full md:h-[512px] md:w-[768px] xl:h-[85vh] xl:w-full"
         >
           <SwiperSlide>
             <Image
-              className="object-cover"
+              className="rounded-2xl object-cover"
               src={thumbSrc}
               alt=""
               layout="fill"
@@ -79,7 +88,7 @@ const PropertyDetails = ({ property }) => {
             return (
               <SwiperSlide key={pic.fields.title}>
                 <Image
-                  className="object-cover"
+                  className="rounded-2xl object-cover"
                   src={`http:${pic.fields.file.url}`}
                   alt=""
                   layout="fill"
@@ -89,22 +98,36 @@ const PropertyDetails = ({ property }) => {
           })}
         </Swiper>
 
-        <section className="px-4 py-2 flex flex-col">
-          <p className="text-lg md:text-2xl lg:text-3xl">{location}</p>
-          <h4 className="font-bold text-lg lg:text-4xl">{title}</h4>
-          <p className="mb-4 font-semibold text-2xl text-green-600 lg:text-3xl">
-            ${price} USD
+        <section className="p-2 pt-6 xl:px-6 flex flex-col">
+          <p className="font-bold text-blue-600 text-lg lg:text-xl">
+            {formattedPrice}
+          </p>
+          <h4 className="my-2 font-bold tracking-normal text-xl lg:text-2xl xl:text-3xl">
+            {title}
+          </h4>
+          <p className="text-lg lg:text-xl flex gap-2 items-center text-blue-600">
+            <FaMapMarkerAlt />
+            {location}
           </p>
 
-          <div className="text-lg flex gap-4 lg:text-2xl">
+          <section>
+            <h5 className="font-bold mt-4 text-xl">Features:</h5>
             <p>
-              Area: {area} m<sup>2</sup>
+              Area: {area}m<sup>2</sup>
             </p>
-            <p>Rooms: {rooms}</p>
             <p>Floors: {floors}</p>
-          </div>
+            <p>Bedrooms: {rooms}</p>
+            <p>Bathroom(s): {floors}</p>
+            <p>Kitchen(s): {floors}</p>
+          </section>
 
-          <p className="mt-4 text-lg lg:text-xl">{description}</p>
+          <section className="mb-4">
+            <h5 className="font-bold mt-4 text-xl">Description:</h5>
+            <p>{description}</p>
+          </section>
+
+          <Button href="mailto:khaninshal@hotmail.com">Contact Now</Button>
+          {/* <p className="mt-4 text-lg lg:text-xl">{description}</p> */}
         </section>
       </div>
     </>
