@@ -10,12 +10,6 @@ const NavLinks = () => {
       <li>
         <Link href="/properties">Properties</Link>
       </li>
-      <li>
-        <Link href="/">About</Link>
-      </li>
-      <li>
-        <Link href="/">Contact Us</Link>
-      </li>
     </>
   );
 };
